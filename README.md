@@ -24,11 +24,11 @@ docker run --name greenplum -p 5432:5432 -d as2sp/greenplum7
 
 ## Save image
 ```
-docker save as2sp_greenplum7 as2sp_greenplum7.tar
+docker save as2sp/greenplum7 as2sp_greenplum7.tar
 ```
 or with compression:
 ```
-docker save as2sp_greenplum7 | gzip > as2sp_greenplum7.tar.gz
+docker save as2sp/greenplum7 | gzip > as2sp_greenplum7.tar.gz
 ```
 
 ## Load image
