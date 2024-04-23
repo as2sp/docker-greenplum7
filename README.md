@@ -6,7 +6,7 @@ While running this image, GreenPlum version 7.1.0 is deployed with a primary coo
 The container runs on Debian 12 slim version.
 
 ## Run
-You can directly install and run the Docker using this command. In this case, a pre-built image from Docker Hub will be deployed, it will have 4 segments.
+You can directly install and run the Docker using this command. In this case, a pre-built image from Docker Hub will be deployed, it will have 4 segments. Default username/password: gpadmin/gppass
 ```
 docker run --name greenplum -p 5432:5432 -d as2sp/greenplum7
 ```
