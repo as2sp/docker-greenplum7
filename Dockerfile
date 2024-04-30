@@ -52,7 +52,7 @@ RUN wget https://github.com/greenplum-db/gpdb/archive/refs/tags/7.1.0.zip && \
 
 WORKDIR /opt/gpdb-7.1.0/
 
-RUN echo "7.1.0" > ./VERSION && \
+RUN echo "7.1.0 build" > ./VERSION && \
     ./configure --prefix=/usr/local/gpdb --with-perl --with-python --with-libxml --enable-gpfdist --with-gssapi \
         --with-zstd && \
     make -j $(nproc) && \
